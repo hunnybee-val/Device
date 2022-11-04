@@ -7,11 +7,28 @@
   <body>
     <header class="page-header">
       <a href="index.html"><img src="" alt="Логотип "Девайс""></a>
-      <section>
-        <form class="search-bar" action="index.html" method="post">
-          
-        </form>
-      </section>
+      <nav class="user-nav">
+        <ul class="user-menu">
+          <li class="user-menu-item"><form class="search-bar" action="https://echo.htmlacademy.ru/courses" method="get">
+              <label class="visually-hidden" for="header-searchbar">Текст поиска</label>
+              <input type="text" name="header-searchbar" id="header-searchbar" placeholder="Текст поиска">
+              <input type="submit" value="Найти">
+            </form></li>
+          <li class="user-menu-item"><img src="" alt=""><a href="#">Войти</a></li>
+          <li class="user-menu-item"><img src="" alt=""><a href="#">Сравнить</a></li>
+          <li class="user-menu-item"><img src="" alt=""><a href="#">Корзина</a></li>
+        </ul>
+      </nav>
+      <nav class="store-nav">
+        <ul class="store-menu">
+          <li class="catalogue-expand"><label class="catalogue-label">Каталог товаров
+            <button name="button-expand-list" id="button-expand-list"><img src="" alt=""></button>
+          </label></li>
+          <li class="store-menu-item"><a href="#">Доставка</a></li>
+          <li class="store-menu-item"><a href="#">Гарантия</a></li>
+          <li class="store-menu-item"><a href="#">Контакты</a></li>
+        </ul>
+      </nav>
     </header>
 
 
