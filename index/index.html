@@ -12,7 +12,7 @@
     <link href="https://fonts.googleapis.com/css2?family=Rubik:wght@700&display=swap" rel="stylesheet">
   </head>
   <body>
-    <header class="index-header">
+    <header class="index-header index-page">
       <a href="index.html" class="main-device-logo"><img src="img\icons\device-logo.svg" alt="Логотип Девайс"></a>
       <nav class="user-nav">
         <ul class="nav-menu-1">
@@ -32,7 +32,7 @@
       </nav>
       <nav class="store-nav">
         <label class="catalogue-label">Каталог товаров
-            <button name="button-expand-list" id="button-expand-list"><img src="img\small icons\Property 1=plus, state=Default.png" alt=""></button>
+            <button name="button-expand-list" id="button-expand-list"><!--<img src="img\small icons\Property 1=plus, state=Default.png" alt="">--></button>
         </label>
         <ul class="store-menu">
           <li class="store-menu-item"><a href="#">Доставка</a></li>
@@ -45,25 +45,22 @@
     <main class="main">
       <div class="main-container">
         <h1 class="visually-hidden">Интернет-магазин "Девайс"</h1>
-        <section >
-          <div class="index-slideshow" id="index-slideshow">
+        <section  class="index-slideshow">
 
             <div class="index-slide" id="index-slide-1">
               <div class="slide-image-container">
-                <label class="visually-hidden" for="button-slide-back">Назад</label>
-                <button name="slide-button slideshow-back" id="button-slide-back">
-                  <img src="img\icons\left-tall-arrow.png" alt="">
-                </button>
                 <img src="img\indexprod\quadrocopter.png" alt="Квадрокоптер" width="560" height="560">
-                <label class="visually-hidden" for="button-slide-forward">Вперед</label>
-                <button name="slide-button slideshow-forward" id="button-slide-forward">
-                  <img src="img\icons\right-tall-arrow.png" alt="">
-                </button>
+                <div class="slider-button-container">
+                  <button class="slide-button slideshow-back" id="button-slide-back">
+                  </button>
+                  <button class="slide-button slideshow-forward" id="button-slide-forward">
+                  </button>
+                </div>
               </div>
               <div class="slide-description-container">
-                <span class="index-slide-bold-caption">
-                  <b>Порхает как бабочка, жалит как пчела!</b>
-                </span>
+
+                <h2>Порхает как бабочка, жалит как пчела!</h2>
+
                 <p class="index-slide-caption">Это обычный, на первый взгляд, квадрокоптер оснащен мощным лазером,
                   замаскированным под стандартную камеру.</p>
                 <a class="index-slide-item-link" href="#">
@@ -80,6 +77,23 @@
                     <td class="index-item-info-row-char-item">50 м</td>
                   </tr>
                 </table>
+                <ol class="index-slider-pagination">
+                  <li class="index-slider-pagination-item">
+                    <button class="slider-pagination-button active-slide" type="button">
+                      <span class="visually-hidden">1 слайд</span>
+                    </button>
+                  </li>
+                  <li class="index-slider-pagination-item">
+                    <button class="slider-pagination-button" type="button">
+                      <span class="visually-hidden">2 слайд</span>
+                    </button>
+                  </li>
+                  <li class="index-slider-pagination-item">
+                    <button class="slider-pagination-button" type="button">
+                      <span class="visually-hidden">3 слайд</span>
+                    </button>
+                  </li>
+                </ol>
               </div>
             </div>
 
@@ -152,11 +166,7 @@
                 </div>
               </div>
 
-            <label class="visually-hidden">Слайд 1<button id="index-show-slide-1-button"></button></label>
-            <label class="visually-hidden">Слайд 2<button id="index-show-slide-1-button"></button></label>
-            <label class="visually-hidden">Слайд 3<button id="index-show-slide-1-button"></button></label>
 
-          </div>
         </section>
 
         <section>
@@ -257,14 +267,14 @@
           </div>
         </section>
 
+
+
         <section class="main-container">
-          <label class="index-delivery">
-            <div class="index-delivery-icon"><img src="img\icons\delivery.png" alt=""></div>
-            <button class="index-delivery-button" id="index-delivery-button">
-              Доставим редкий товар под заказ
-            </button>
-            <div class="index-delivery-info-icon"><img src="img\icons\info icon.png" alt=""></div>
-          </label>
+                <button class="index-delivery-button" id="index-delivery-button">
+                <div class="index-delivery-icon"></div>
+                  <span>Доставим редкий товар под заказ</span>
+                <div class="index-delivery-info-icon"></div>
+              </button>
         </section>
 
         <section class="main-container index-about-container ">
@@ -313,7 +323,7 @@
               <input type="submit" value="Подписаться" class="subscribe">
             </form>
           </div>
-          <img src="img\icons\tick-big.png" alt="" style = "width: 14px; height: 14px;">
+          <!--<img src="img\icons\tick-big.png" alt="" style = "width: 14px; height: 14px;">-->
           <span class="index-newsletter-free">Это бесплатно</span>
         </div>
       </div>
