@@ -512,7 +512,7 @@ html {
 }
 
 
-.index-delivery-icon::hover{
+.index-delivery-icon:hover{
   transition: background-color 0.1s linear;
   background-color: #FFC700;
 }
@@ -683,9 +683,8 @@ html {
   margin: 0;
   padding: 0;
   font-family: "Raleway", "Arial", sans-serif;
-  font-weight: 800;
   font-size: 50px;
-  font-weight: 800px;
+  font-weight: 800;
   margin-top: 40px;
   margin-bottom: 48px;
 }
@@ -840,7 +839,7 @@ html {
   width: 253px;
   height: 57px;
   padding: 18px auto;
-  font-family: 'Raleway';
+  font-family: 'Raleway', sans-serif;
   font-style: normal;
   font-weight: 800;
   font-size: 18px;
