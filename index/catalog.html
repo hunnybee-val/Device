@@ -16,13 +16,11 @@
       <a href="index.html" class="main-device-logo"><img src="img\icons\device-logo.svg" alt="Логотип Девайс"></a>
       <nav class="user-nav">
         <ul class="nav-menu-1">
-          <div class="search-bar-container">
-            <form class="search-bar" action="https://echo.htmlacademy.ru/courses" method="get">
-              <label class="visually-hidden" for="header-searchbar">Текст поиска</label>
-              <input type="text" name="header-searchbar" id="header-searchbar" placeholder="Текст поиска">
-              <input type="submit" value="Найти">
-            </form>
-          </div>
+          <form class="search-bar" action="https://echo.htmlacademy.ru/courses" method="get">
+            <label class="visually-hidden" for="header-searchbar">Текст поиска</label>
+            <input type="text" name="header-searchbar" id="header-searchbar" placeholder="Текст поиска">
+            <input type="submit" value="Найти">
+          </form>
           <li class="user-menu-item"><img class="link-icon" src="img\small icons\Property 1=login, state=Default.png" alt=""><a href="#">Вася Петухов</a></li>
           <li class="user-menu-item logout">Выйти</li>
         </ul>
@@ -65,21 +63,28 @@
         <h2>Фильтр:</h2>
         <form class="catalog-filter" action="https://echo.htmlacademy.ru/" method="get">
           <fieldset class="catalog-filter price">
-            <legend class="catalog-filter-title">Стоимость</legend>
-            <button class="range-toggle toggle-min" type="button">
-              <span class="visually-hidden">Изменить минимальную цену.</span>
-            </button>
-            <button class="range-toggle toggle-max" type="button">
-              <span class="visually-hidden">Изменить максимальную цену.</span>
-            </button>
+            <legend class="catalog-filter-title">Стоимость: </legend>
+            <div class="range">
+                <div class="range-scale">
+                  <div class="range-bar" style="left: 42px; width: 136px">
+                    <button class="range-toggle toggle-min">
+                      <span class="visually-hidden">Изменить минимальную цену.</span>
+                    </button>
+                    <button class="range-toggle toggle-max">
+                      <span class="visually-hidden">Изменить максимальную цену.</span>
+                    </button>
+                  </div>
+                </div>
 
-            <label class="catalog-filter-label">
-              от <input class="catalog-filter-input" type="number" name="min-price"> ₽
-            </label>
-
-            <label class="catalog-filter-label">
-              до <input class="catalog-filter-input" type="number" name="max-price"> ₽
-            </label>
+                <div class="range-wrapper-inputs">
+                  <label class="catalog-filter-label">
+                    от <input class="range-input" type="number" value="50" name="min-price"> ₽
+                  </label>
+                  <label class="catalog-filter-label">
+                    до <input class="range-input" type="number" value="1500" name="max-price" style="width: 37px"> ₽
+                  </label>
+                </div>
+              </div>
           </fieldset>
 
           <fieldset class="catalog-filter color">
@@ -87,35 +92,35 @@
             <ul class="catalog-filter-list">
               <li class="catalog-filter-item>">
                 <label class="control">
-                  <input class=" control-input" type="checkbox" name="black" checked>
+                  <input class=" control-input visually-hidden" type="checkbox" name="black" checked>
                   <span class="control-mark"></span>
                   <span class="control-label">Черный</span>
                 </label>
               </li>
               <li class="catalog-filter-item>">
                 <label class="control">
-                  <input class=" control-input" type="checkbox" name="white" checked>
+                  <input class=" control-input visually-hidden" type="checkbox" name="white" checked>
                   <span class="control-mark"></span>
                   <span class="control-label">Белый</span>
                 </label>
               </li>
               <li class="catalog-filter-item>">
                 <label class="control">
-                  <input class=" control-input" type="checkbox" name="blue">
+                  <input class=" control-input visually-hidden" type="checkbox" name="blue">
                   <span class="control-mark"></span>
                   <span class="control-label">Синий</span>
                 </label>
               </li>
               <li class="catalog-filter-item>">
                 <label class="control">
-                  <input class=" control-input" type="checkbox" name="red">
+                  <input class=" control-input visually-hidden" type="checkbox" name="red">
                   <span class="control-mark"></span>
                   <span class="control-label">Красный</span>
                 </label>
               </li>
               <li class="catalog-filter-item>">
                 <label class="control">
-                  <input class=" control-input" type="checkbox" name="pink">
+                  <input class=" control-input visually-hidden" type="checkbox" name="pink">
                   <span class="control-mark"></span>
                   <span class="control-label">Розовый</span>
                 </label>
